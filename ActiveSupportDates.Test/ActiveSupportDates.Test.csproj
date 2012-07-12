@@ -50,9 +50,9 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ModifiersTest.cs" />
+    <Compile Include="NumericExtensionsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TimeSpansTest.cs" />
+    <Compile Include="TimeSpanExtensionsTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ActiveSupportDates\ActiveSupportDates.csproj">

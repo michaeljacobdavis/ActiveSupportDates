@@ -6,11 +6,21 @@ using System.Text;
 namespace ActiveSupportDates
 {
 
-    public static class Modifiers
+    public static class TimeSpanExtensions
     {
+        public static TimeSpan And(this TimeSpan first, TimeSpan second)
+        {
+            return first + second;
+        }
+
         public static DateTime Ago(this TimeSpan val)
         {
             return Until(val, DateTime.UtcNow);
+        }
+
+        public static DateTime Before(this TimeSpan val, DateTime dateTime)
+        {
+            return Until(val, dateTime);
         }
 
         public static DateTime Until(this TimeSpan val, DateTime dateTime)
